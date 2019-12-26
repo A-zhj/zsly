@@ -122,10 +122,10 @@ td{
   width: 700px;height: 38px;
   vertical-align: middle;
 }
-input{
+.input{
   width: 75%;height: 38px;
 }
-button{
+table>tr>button{
   width: 30%;height: 38px;
   border: 0px solid #cccccc;
   background: -webkit-linear-gradient(top, #48b9c1 0%, #2e9791 100%);

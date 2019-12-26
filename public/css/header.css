@@ -136,3 +136,143 @@ header{margin-bottom: 1rem;}
   position: absolute;
   top: 109px;
 }*/
+
+
+/*  */
+
+.hide{
+  display: none;
+}
+.regist_login>.c2{
+  line-height: 16px ;
+}
+.c1{
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left:0;
+  right: 0;
+  background: rgba(0,0,0,.5);
+  z-index: 29;
+}
+.c2{
+  background-color: white;
+ 
+  position: fixed;
+  width: 400px;
+  height: 300px;
+  top:50%;
+  left: 50%;
+  z-index: 30;
+  margin-top: -150px;
+  margin-left: -200px;
+}
+.cd{
+  height:25px;
+  position: absolute;
+  top:8px;
+  right:10px;
+  font-size:25px;
+  color: #696e78;
+}
+.cd:hover{
+  color: #eb7350;
+  cursor: pointer;
+}
+.login{
+  width: 200px;
+  height: 240px;
+  margin:30px 100px;
+}
+h3{
+  color: #333;
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 128px;
+  font-weight: bold;
+}
+#modal .uname, #modal .upwd{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  margin-bottom:15px;  
+  justify-content: space-around;
+}
+
+#modal .w-input:focus{
+  border:1px solid #eb7350 !important;
+  box-shadow: none ;
+  outline-style: none;
+}
+#modal .uname input,#modal .upwd input{
+  width: 100%;
+  border:1px solid #ccc ;
+  padding: 2px;
+  padding-left:28px; 
+  background: url("../img/login/name.png") no-repeat 3px;
+  color: #666;
+}
+#modal .upwd>input{
+  background: url("../img/login/pwd.png") no-repeat 3px;
+}
+#modal .forget-pwd{
+  width: 200px;
+ 
+  display: flex;
+  justify-content: space-between;
+  
+}
+#modal .forget-pwd>.rem span{
+  color: #666;
+
+}
+.forget-pwd .rem>input{
+  vertical-align: bottom;
+}
+.login a:link{
+  text-decoration: none;
+  color: #666;
+}
+.dl{
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  background: #ff8140;
+  color: #fff;
+  outline-style: none;
+  border-style: none;
+  margin-top:10px;
+}
+.dl:hover{
+  background:#f7671d;
+  cursor: pointer;
+}
+#modal .zhuche{
+  color: #666;
+  font-size: 12px;
+  margin-top:5px;
+}
+.zhuche a:link{
+  margin-left: 3px;
+  color: #f7671d;
+}
+.login-other{
+  width: 100%;
+  height: 26px;
+  margin-top:5px;
+}
+.login-other .icon-alipay,.login-other .icon-qq,.login-other .icon-wechat{
+  width: 26px;
+  height: 26px;
+  display:inline-block;
+  background:url("../img/login/alipay.png");
+}
+.login-other .icon-qq{
+  background:url("../img/login/QQ.png");
+}
+.login-other .icon-wechat{
+  background:url("../img/login/wechat.png");
+}
