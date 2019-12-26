@@ -11,12 +11,12 @@
     margin-top: 20px;
     margin-bottom: 10px;
     border:0px solid #ccc;
-    background: -webkit-linear-gradient(top, #2e9197 0%, #48b9c1 100%);
-    height: 48px;
+    background: #2e9197;
+    height: 40px;
   }
   .title>h1{
-    font-size: 28px;
-    line-height: 48px;
+    font-size: 18px;
+    line-height: 40px;
     color: #fff;
     margin: 0px 15px;
   }
