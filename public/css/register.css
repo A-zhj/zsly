@@ -1,0 +1,105 @@
+
+body{
+  background: url("../img/banner3.png") no-repeat ;
+  background-size:100%;
+
+}
+button{
+  border-style: none;
+  outline-style: none;
+  cursor: pointer;
+}
+.reg{
+  width: 600px;
+  height: 400px;
+  border: 1px solid #ccc;
+  margin: 160px auto;
+  background: rgba(255,255,255,0.5);
+  border-radius: 10px; 
+  color: #333;
+}
+h2{
+  margin:20px 0 0 20px;
+  /* text-align: center; */
+
+}
+p{
+  color: #666;
+  font-size: 12px;
+  margin:-23px 0 0 340px;
+}
+p>button{
+  margin-left: 5px;
+  padding: 5px 10px;
+  border:1px solid #999;
+  border-radius: 5px;
+}
+.reg>div{
+  margin:10px 0 0 40px; 
+}
+.reg>div>span{
+  margin-right: 20px;
+}
+.reg>div>span>label{
+  display: inline-block;
+  width: 65px;
+  height: 34px;
+  text-align: right;
+}
+.reg>div>input{
+  width: 260px;
+  height: 16px;
+  padding: 6px 3px;
+}
+.reg>div>input:focus{
+  border:1px solid #2e9197;
+  box-shadow: none ;
+  outline-style: none;
+}
+.reg>.captcha>input{
+  width: 89px;
+  margin-right: 10px;
+}
+.reg>.reg-btn{
+  margin:20px 0 0 124px;
+  padding:8px 78px;
+  background-color: #2e9197;
+  /* border-style: none;
+  outline-style: none; */
+  color: #fff;
+}
+.reg>.reg-btn:hover{
+  background-color: #48b9c1;
+  border-radius: 3px;
+
+}
+/*验证的样式*/
+.vali_info{/* 页面初始，验证消息不显示 */
+  display:none;
+}
+
+.vali_success,.vali_fail{
+  background-repeat:no-repeat;
+  background-position:left center;
+  display:inline-block;
+  margin: auto;
+}
+/* 验证消息：验证通过时的样式 */
+.vali_success{
+    background-image:url("../img/public_img/ok.png");
+  padding-left:20px;
+  width:0px;height:20px;
+  overflow:hidden;
+  margin-left: 10px
+
+}
+/* 验证消息：验证失败时的样式 */
+.vali_fail{
+    background-image:url("../img/public_img/err.png");
+    border:1px solid red;
+    background-color:#ddd;
+    color:#fc4343;;
+    padding-left:20px;
+    margin-left: 10px
+ 
+}
