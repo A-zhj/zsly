@@ -27,7 +27,7 @@ $(function(){
                 <dd>
                     ${otres[i].jlevel} &emsp; | &emsp; 价格:  <span><b>¥</b>${otres[i].jprice.toFixed(2)}</span>
                 </dd>
-                <a href="details.html"">查看详情</a>
+                <a href="detailis_.html">立即订购</a>
               </dl>
             </div>
           </div>`

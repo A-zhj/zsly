@@ -1,0 +1,244 @@
+
+a{
+  text-decoration: none;
+  outline: 0;
+  cursor: pointer;
+  color:#2e9197 !important;
+}
+a:hover{
+  text-decoration: none !important;
+  color:#2e9197 ;
+        }
+.container{
+  max-width: 1024px !important;
+  height: 100%;
+}
+ul{
+  list-style:none;
+}
+/* 大轮播图 */
+#banner{
+  width:500px;
+  height:280px;
+  position: relative;
+  overflow: hidden;
+}
+#ul-imgs>li{
+  width:500px;
+  float:left;
+}
+#ul-imgs img{
+  width:500px;
+}
+/* 大图两个箭头 */
+  #banner #prev,#banner #next{
+  width: 50%;
+  height: 100%;
+  position: absolute; 
+  top:0;   
+}
+#banner #prev{
+  left:0;
+}
+#banner #next{
+  right:0;
+} 
+/* 左右箭头公共样式 */
+#banner #prev i,#banner #next i{
+  width: 48px;
+  height: 50px;
+  opacity:0;
+  position: absolute;
+  top: 50%;
+  background-position: center center;
+  background-image: url("../img/details_img/prev.png");
+  background-repeat: no-repeat;
+  background-color:rgba(0,0,0,0.5);
+  transform: translateY(-50%);
+}
+/*右箭头*/
+#banner #next i{
+  right: 0;
+  background-image: url("../img/details_img/next.png");
+}
+       
+/* 鼠标移入箭头显示 */
+#banner #prev:hover i,#banner #next:hover i{
+  opacity:1;
+}   
+/*** 小轮播图 ***/
+/* 整个轮播图 */
+.imgsm{
+  width:500px;
+  height:50px;
+  margin-top:10px;
+  position: relative;
+  padding: 0 22px 0 28px;
+}
+/* 中间图片框 */
+.imgsm #smwrap{
+  width: 100%;
+  height:100%;
+  position:relative;
+  overflow: hidden;
+}
+#smwrap ul{
+  position:absolute;
+  height: 100%;
+  overflow: hidden;
+  transform: left .4s;
+}
+#smwrap #ul-index .transition{   
+  transition:all .5s linear;
+}
+#smwrap li{
+  height: 100%;
+  float: left; 
+}
+        /* 图片a标签定宽高 */
+#smwrap li a{
+  position: relative;
+  float: left;
+  display: block;
+  width: 84px;
+  height: 100%;
+  margin-right: 6px;
+}
+/* 图片大小 */
+#smwrap li img{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/* 图片移入时白色边距和蓝色边框 */
+#smwrap .active a::before,#smwrap .active a:hover::before{
+  content: "";
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 3px solid #fff;
+}
+#smwrap .active a::after,#smwrap .active a:hover::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding:1px;
+  border: 2px solid #4eb6fb;
+}
+
+/* 小图片左右箭头宽高位置 */
+        
+.imgsm a{ 
+  width: 20px;
+  height: 50px;
+  position:absolute;
+  top:0;
+}
+.imgsm #smcotrol #smprev{
+  left:0;
+}
+.imgsm #smcotrol #smnext{
+  position: absolute;
+  right:0;
+}
+/* 箭头  鼠标移入时样式 颜色 */
+#smcotrol a::before {
+content: "";
+position: absolute;
+top: 50%;
+right: 50%;
+margin-top: -6px;
+margin-right: -9px;
+width: 10px;
+height: 10px;
+border-left: 2px solid #4eb6fb;
+border-bottom: 2px solid #4eb6fb;
+transform: rotate(45deg)
+}
+#smcotrol a:hover::before{
+  border-left: 2px solid #2e9197;
+  border-bottom: 2px solid #2e9197;
+}
+#smcotrol a{
+  background: #a6ebff;
+}
+#smcotrol a:hover{
+  background: #c0f1ff;
+}
+#smcotrol #smnext{
+  transform: rotate(-180deg);
+}     
+
+/* 右边 */
+.xing{
+  width:120px ;
+  height: 30px;
+  background:url(../img/details_img/wujiaox.jpg)-6px -201px;
+background-size: 275px 245px;
+}
+.address{
+  display: flex;
+  margin: 24px 0;
+}
+.address p{
+  font-size: 1px;
+  margin-top:-3px ;
+}
+h5{
+  width:65px;
+  font-size: 2px !important;
+  font-weight: 700 !important;
+}
+.cn p{
+  border:1px solid #adddf2;
+  color: #28a6f1;
+  margin: 0 8px;
+  padding: 0 5px;
+}
+.title_pt{
+  font-size: 1px;
+}
+.pf{
+  color:#2e9197 ;
+  font-size: 26px;
+}
+span{
+  font-size: 1px;
+}
+
+.title_pt a{
+  color:red !important;
+}
+.right{
+  padding-left:20px;
+}
+.btn-success{
+  background: #2e9197 !important;
+  margin-left: 180px;
+  padding: 10px 40px !important;
+}
+.btn-success>a{
+  color: #fff !important;
+  font-size: 24px;
+  text-align: center;
+}
+.btn-success:focus{
+  box-shadow: 0 0 0 .2rem rgba(75, 185, 193, 0.5) !important;
+}       
+.item{
+  margin-top:40px;
+}
+.item span{
+  font-size: 16px;
+}
+/* 日历 */
+#date{
+  width: 100%;
+  margin-top: 15px;
+  position: relative; 
+}

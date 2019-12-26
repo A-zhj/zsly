@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>景点详情</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/detailis_.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/calendar_.css">
+</head>
+
+<body>
+    <header id="header"></header>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 px-0">
+                <div class="brief-box">
+                    <!--左边轮播图和日期  -->
+                    <div class="brief-left">
+                        <!--大轮播图  -->
+                        <div id="banner">
+                            <!-- 图片列表 -->
+                            <ul id="ul-imgs" style="width:4000px;margin-left:0px;">
+                                <li><img src="img/img_detal/1.jpg" alt=""></li>
+                                <li><img src="img/img_detal/2.jpg" alt=""></li>
+                                <li><img src="img/img_detal/3.jpg" alt=""></li>
+                                <li><img src="img/img_detal/4.jpg" alt=""></li>
+                                <li><img src="img/img_detal/5.jpg" alt=""></li>
+                                <li><img src="img/img_detal/1.jpg" alt=""></li>
+                            </ul>
+                            <!-- 左右按钮 -->
+                            <a id="prev" href="javascript:;" title="上一张"><i></i></a>
+                            <a id="next" href="javascript:;" title="下一张"><i></i></a>
+                        </div>
+                        <!-- 小图片轮播 -->
+                        <div class="imgsm">
+                            <!--图片包裹框-->
+                            <div id="smwrap">
+                                <!-- 图片列表 -->
+                                <ul id="ul-idex" style="margin-left:0px;">
+                                    <li class="active">
+                                        <a class="current" href="javascript:;">
+                                            <img src="img/img_detal/1.jpg" alt="">
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a class="current" href="javascript:;">
+                                            <img src="img/img_detal/2.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="current" href="javascript:;">
+                                            <img src="img/img_detal/3.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="current" href="javascript:;">
+                                            <img src="img/img_detal/4.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="current" href="javascript:;">
+                                            <img src="img/img_detal/5.jpg" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 左右箭头 -->
+                            <div id="smcotrol">
+                                <a id="smprev" href="javascript:;" title="向前浏览"></a>
+                                <a id="smnext" href="javascript:;" title="向后浏览"></a>
+                            </div>
+                        </div>
+                        <!-- 日期 -->
+                        <div id="date">
+                            <label for="rangedate">日期范围选择</label>
+                            <input type="text" placeholder="日期选取范围" id="rangedate">   
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <!-- 右边 -->
+            <div class="col-6 right px-0">
+                <div class="title_pt">
+                    <h2>普陀山风景区</h2>
+                    <span><a href="">AAAAA</a>景区</span>
+                </div>
+                <div class="address">
+                    <h5>景点地址</h5>
+                    <p>舟山市普陀山梅岑路85-1号(普陀山正山门旅游服务中心，普陀山售票窗口旁边) <a href="">查看地图</a></p>
+                </div>
+                <div class="address">
+                    <h5>开放时间</h5>
+                    <p>全年06:30~22:30</span>
+                </div>
+                <div class="address cn">
+                    <h5>服务承诺</h5>
+                    <p><a href="">如实描述</a></p>
+                    <p><a href="">贵一赔三</a></p>
+                    <p><a href="">入园保障</a></p>
+                    <p><a href="">特殊退订保障</a></p>
+                </div>
+                <div class="address">
+                    <div class="xing"></div>
+                    <span><span class="pf">4.7</span>/5分</span>
+                    <span class="price"><b>¥</b>30</span>
+                    <button class="btn btn-success"><a href="pay.html">立即预定</a></button>
+                </div>
+                <div class="item">
+                    <span>★ "海天佛国"的观音道场</span><br>
+                    <span>★ 全程无自费、无任何诱导购物、拒绝烧高香</span><br>
+                    <span>★ 佛国圣地人文经典景致浓缩式全体验</span><br>
+                </div>
+            </div>  
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <!-- 选项卡-->
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a data-toggle="tab" class="nav-link active" href="#tab1">预定须知</a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-toggle="tab" class="nav-link " href="#tab2">景点简介</a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-toggle="tab" class="nav-link " href="#tab3">交通指南</a>
+                    </li>
+                </ul>
+
+                <!-- <img src="img/img_detal/ydxz.png" alt="">
+                <img src="img/img_detal/jdjj.png" alt=""> -->
+            </div>
+        </div>
+    </div>
+    <footer id="footer"></footer>
+    <script src="js/detailis_.js"></script>
+    <script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/moment.min.js"></script>
+    <script src="js/es6.js"></script>
+    <script src="js/date.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+</body>
+
+</html>
