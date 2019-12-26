@@ -18,7 +18,7 @@ for(var i=1;i<timas.length;i++){
         e.target.style.color = "#fff"
         }
       }
-
+ 
       e.target.style.background = "#48B9C1"
     }else {
       e.target.style.background = "#48B9C1"
@@ -42,7 +42,7 @@ for(var i=1;i<timas.length;i++){
     //将结果追加到页面
     totaldetails.innerHTML = `¥${total.toFixed(2)}`;
     totaltitle.innerHTML = `${title}+往返票`
-    totap.innerHTML = `¥${total.toFixed(2)}`;
+    totap.innerHTML = `¥${total.toFixed(2)}/人`;
     valuespan.innerHTML = 1;
     crspan.innerHTML = `¥${total.toFixed(2)}`
     tota.innerHTML=`¥${total.toFixed(2)}`;

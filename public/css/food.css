@@ -9,7 +9,7 @@ a{color: #2e9197;font-size: 16px;}
 a:hover{text-decoration: none;}
 .container{background: #fff;}
 .mm,.etitle{
-  height: 40px;
+  height: 48px;
   margin-top: 20px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
@@ -17,8 +17,8 @@ a:hover{text-decoration: none;}
   border-radius: 3px;
 }
 .mm>h1,.etitle>h1{
-  font-size: 18px;
-  line-height: 40px;
+  font-size: 28px;
+  line-height: 48px;
   color: #fff;
   margin: 0px 15px;
 }

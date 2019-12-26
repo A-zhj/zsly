@@ -3,22 +3,13 @@
   margin-top: 20px;
   margin-bottom: 10px;
   border:0px solid #ccc;
-  background:#2e9197 ;
-  height: 40px;
-}
-h1{
-  display: flex;
-  justify-content: space-between;
-}
-h1 span{
-  color:#fff;
-  font-size:14px;
-  text-align: right;
-  cursor:pointer;
+  background: -webkit-linear-gradient(top, #2e9197 0%, #48b9c1 100%);
+  height: 48px;
+
 }
 .ss>:nth-child(1)>h1,.ss>:nth-child(4)>h1,.ss>:nth-child(8)>h1{
-  font-size: 18px;
-  line-height: 40px;
+  font-size: 28px;
+  line-height: 48px;
   color: #fff;
   margin: 0px 15px;
 }
@@ -49,36 +40,34 @@ h1 span{
 }
 .row :nth-child(3)>p{
   height: 100%;
-  border-right: 1px solid #ccc;
+  border: 1px solid #ccc;
   /* font-size: 22px; */
-  font-weight: bolder;
-  padding-top: 24px;
-  margin-left: 24px;
-  text-indent: 14px;
+  font-weight: 550;
+  text-indent: 15px;
   text-justify: auto;
-  /* font-family: Consolas, Monaco, Monospace; */
-  font-family:'宋体','Arial';
+  font-family: Consolas, Monaco, Monospace;
   background-color: #f8f8f8;
 } 
 /* 媒体查询  >1204   font-size:22px <1204 font-size:20px*/
 @media screen and (min-width:1023px){
   .js{
-    font-size: 14px;
-    text-align: top;
-    width: 100%;
-    
-    
+    font-size: 24px;
   }
 }
 @media screen and (max-width:1200px){
   .js{
-    font-size: 10px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width:996px){
+  .js{
+    font-size: 14px;
   }
 }
 /* 魅力舟山 */
 .img{
   width: 100%;height: 100%;
-  /* border: 1px solid #ccc; */
+  border: 1px solid #ccc;
   padding: 10px 10px;
 }
 .img>img{
@@ -86,18 +75,18 @@ h1 span{
 }
 .charm>h3{
   text-align: center;
-  font-size: 18px;
+  font-size: 1.75rem;
   color: #5a5a5a;
 }
 .charm{
   padding: 20px 0px;
-  /* border: 1px solid #ccc ; */
+  border: 1px solid #ccc ;
   border-top: 0px;
 }
 .charm :nth-child(2){
   text-align: center;
   color: #7e808a;
-  font-size: 14px;
+  font-size: 18px;
 }
 .charm :last-child{
   display: flex;
@@ -105,7 +94,7 @@ h1 span{
   text-align: center;
   text-decoration: none;
   font-size: 12px;
-  color:#7e808a; 
+  color: #ccc;
 }
 
 /* 风景名胜 */
@@ -119,18 +108,15 @@ h1 span{
 }
 .ss :nth-child(9) .col-3>h2{
     text-align: center;
-    /* color: #214a7b; */
+    color: #214a7b;
     font-weight: bold;
-    font-size: 18px;
-    padding-top: 25px;
 }
 .ss :nth-child(9) .col-3>p{
-    padding-top: 10px;
-    font-size: 14px;
+    font-size: 18px;
     text-align: center;
     /* margin: 5px 3px; */
     font-family: 'Ubuntu',sans-serif;
-    /* color: #214a7b; */
+    color: #214a7b;
 }
 
 /* 图片过度效果 */
@@ -140,17 +126,12 @@ h1 span{
 img{
   max-width: 100%;
   max-height: 100%;
-  transition: all 1s;
+  transition: all 2s;
 }
-.js:hover img{
+img:hover{
   border-radius: 15px;
-  transform:scale(1.09);
+  transform:scale(1.2);
 }
-.js:hover{
-  box-shadow: inset 0 0 5px #2e9197, 0 0 10px #48b9c1;
-}
-
-
 
 
 
@@ -173,54 +154,3 @@ img{
    .carousel-indicators .active{
        background-color: #2e9197;
    }
-
-
-
-   /* 图片效果 */
-   .box{
-    background: linear-gradient(#2e9197,#48b9c1);
-    font-family: 'Merriweather Sans', sans-serif;
-    border-radius: 7px;
-    position: relative;
-    overflow: hidden;
-  
-  }
-  .box img{
-    width: 100%;
-    height: 185px;
-    transition: all 0.5s ease;
-  }
-  .box:hover img{
-    opacity: 0.9;
-    clip-path: polygon(50% 0, 99% 50%, 50% 99%, 0 50%);
-  }
-  .box .box-content{
-    color: #fff;
-    text-align: center;
-    width: 100%;
-    opacity: 0;
-    transform: translateX(-50%) translateY(-50%) rotate(-55deg);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 1;
-    transition: all 0.5s;
-  }
-  .box:hover .box-content{
-    opacity: 1;
-    transform: translateX(-50%) translateY(-50%) rotate(0deg);
-  }
-  .box .title{
-    font-size: 18px;
-    font-weight: 700;
-  }
-  .box .post{
-    font-size: 14px;
-    text-shadow: 0 0 5px #000;
-    display: block;
-    color:#fff;
-  }
-  .box-content h3{
-    color:#fff;
-  }
-
