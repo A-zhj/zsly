@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/details.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/calendar_.css">
+    <link rel="stylesheet" type="text/css" href="css/calendar_.css">
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
 </head>
 
 <body>
@@ -84,7 +85,6 @@
                 </div>
             </div>
             <!-- 右边 -->
-            <!-- 塔？ -->
             <div class="col-6 right px-0">
                 <div class="title_pt">
                     <h2>普陀山风景区</h2>
@@ -108,6 +108,7 @@
                 <div class="address">
                     <div class="xing"></div>
                     <span><span class="pf">4.7</span>/5分</span>
+                    <span class="price"><b>¥</b>30</span>
                     <button class="btn btn-success"><a href="pay.html">立即预定</a></button>
                 </div>
                 <div class="item">
@@ -119,14 +120,223 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <img src="img/details_img/ydxz.png" alt="">
-                <img src="img/details_img/jdjj.png" alt="">
+                <!-- 选项卡-->
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a data-toggle="tab" class="nav-link active" href="#tab1">预定须知</a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-toggle="tab" class="nav-link " href="#tab2">景点简介</a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-toggle="tab" class="nav-link " href="#tab3">交通指南</a>
+                    </li>
+                </ul>
+                <!-- 具体内容-->
+                <div class="tab-content">
+                    <div id="tab1" class="tab-pane active">
+                    <dl class="notice-content">
+                        <dd>
+                        <strong>优待政策</strong>
+                        <div>
+                            儿童：身高1.2m(含)以下或6周岁（含）以下的儿童，持本人有效证件【免费】；身高1.2m（不含）以上—1.5m（含）或6周岁—18周岁（含）的未成年人，持本人有效证件【优惠】。<br>
+                            老人：全国七十周岁以上（含）的老年人，持本人有效证件【免费】；全国六十周岁（含）至六十九周岁（含）的老年人，持本人有效证件【优惠】。<br>
+                            学生：全日制普通学校的在校学生（不包括夜大、电大、网络教育、远程教育、成人教育、继续教育、脱产教育等），持本人有效证件【优惠】。<br>
+                            残疾人：持本人有效证件【免费】。<br>
+                            军人：全国现役军人，含武警、残疾军人，持本人有效证件【免费】。<br>
+                            记者：持新闻总署颁发的记者证【免费】。<br>
+                            教职工：仅限教师节当天，持本人有效证件【免费】。<br>
+                            导游：持全国导游证【免费】。<br>
+                            僧尼：持本人有效证件【免费】。<br>
+                            全国劳动模范：持本人有效证件【免费】。<br>
+                            全国道德模范：持本人有效证件【免费】。<br>
+                            离休干部：持本人有效证件【免费】。<br>
+                            烈士家属：持本人有效证件【免费】。<br>
+                            1、符合减免对象人员请持本人有效证件至检票处核对后进山。<br>
+                            2、普陀山景区门票不包含寺院香花券和洛迦山景点门票。<br>
+                            3、以上信息仅供参考，具体信息请以普陀山景区当天披露为准。<br>
+                        </div>
+                        </dd>
+                        <dd>
+                        <strong>预定限制</strong>
+                        <div>
+                            本产品仅限成人预订，优惠票请自行前往普陀山景区购买。
+                        </div>
+                        </dd>
+                        <dd>
+                        <strong>时令公告</strong>
+                        <div>
+                            旅客购票时请务必带好有效身份证。（购买船票，必须出示身份证，口述身份证号无效），谢谢配合。<br>
+                            需购买半票的1.2米至1.5米的儿童，需携带户口簿，谢谢配合。<br>
+                            上海舟山城北巴士如有0.8m以下免费儿童票，预订时请备注。<br>
+                            上海往返朱家尖车票，婴儿也需要收费，敬请知悉。
+                        </div>
+                        </dd>
+                        <dd>
+                        <strong>温馨提示</strong>
+                        <div>
+                        该景区可能有存在高风险的游玩项目，携程建议您购买相关保险。出行前，建议您仔细阅读旅游安全的相关内容。抵达景区后，也请您不要忽略景区内的游玩提示或安全提示类信息。<br>
+                        在不能满足设备安全运行的恶劣天气，无法抗拒的自然灾害情况下（如雷电、雨雪、冰雹、大雾、暴雨、台风等），景区部分项目将临时关闭或部分关闭，表演会取消或部分取消。<br>
+                        景区活动内容如有变动，以当日公告为准。景区所有项目均会定期进行日检、周检、月检和年度检修，相关检修工作可能会造成部分项目运行时间的延迟或暂停对游客开放，详情以景区现场公告为准。<br>
+                        门票当日一次有效，不能重复使用。使用日期24小时内，如需二次入园，则必须第一次入园前在普陀山正山门大厅签证处，做好证明。<br>
+                        为使您的旅程圆满完成，并普及旅游安全知识及旅游文明公约，特制定<a target="_blank" href="http://pages.ctrip.com/tour/pdf3/20130930.pdf">《携程旅游告游客注意事项》</a>，出行前，提醒您仔细阅读相关内容。同时，携程从出行常识、旅游活动和特殊人群三方面为您提供旅游安全指南。<a target="_blank" href="http://pages.ctrip.com/commerce/promote/201004/package/dj/page_5.htm">查看详情</a>
+                        </div>
+                        </dd>
+                        <dd>
+                        <strong>安全指南</strong>
+                        <div>
+                            旅游安全是旅游的生命线，为保障游客“住得安心、吃得放心、玩的舒心”，携程从出行常识、旅游活动和特殊人群三方面为您提供旅游安全指南。出行前，提醒您仔细阅读相关内容，重视旅游安全，使您的出游真正成为“快乐之游、难忘之游、收获之游”。<a rel="nofollow" href="//pages.ctrip.com/commerce/promote/201004/package/dj/page_5.htm" target="_blank" data-reactid="372">查看详情</a>
+                        </div>
+                        </dd>
+                    </dl>
+                    </div>
+                    <div id="tab2" class="tab-pane ">
+                    <div>
+                        <p>普陀山是观音道场，佛教圣地，其宗教活动可追溯于秦。至唐朝，海上丝绸之路的兴起，促进了普陀山观音道场的形成，并迅速成为汉传佛教中心，传至东南亚及日、韩等国。至清末，全山已形成3大寺、88禅院、128茅蓬，僧众数千。寺院无论大小，都供奉观音大士。可以说是“观音之乡”了。每逢农历二月十九、六月十九、九月十九分别是观音菩萨诞辰、出家、得道三大香会期，全山人山人海，寺院香烟缭绕，一派海天佛国景象。</p>
+                        <p>
+                        
+                        <img src="https://dimg06.c-ctrip.com/images/tg/288/682/982/3e0ad7ebcc994964b2ccde2e127ffa62_C_422_236.jpg" alt="__71">
+                        <img src="https://dimg02.c-ctrip.com/images/tg/758/383/420/91e0e1428f97420aaf70979b3dbfbfd7_C_422_236.jpg" alt="普陀山放生池3abc.jpg">
+                        
+                        </p>
+                        <p>
+                        2007年5月8日，舟山市普陀山风景名胜区，经国家旅游局正式批准，为国家5A级旅游风景区。“海上有仙山，山在虚无缥缈间”，普陀山以其神奇、神圣、神秘，成为驰誉中外的旅游胜地。
+                        </p>
+                        <p>
+                        <img src="https://dimg02.c-ctrip.com/images/tg/675/575/422/f8c42ac2b29c40e28591e63af6bcbe6a_C_422_236.jpg" alt="普陀山梅福禅院abc.jpg">
+                        <img src="https://dimg01.c-ctrip.com/images/tg/789/965/830/e4299537393a4277a406fcaec23b4eac_C_422_236.jpg" alt="普陀山千年古樟abc">
+                        </p>
+                        <p>
+                        普陀山是东海舟山群岛中的一个小岛，南北狭长，面积约12.5平方公里。岛上风光旖旎，洞幽岩奇，古刹琳宫，云雾缭绕。普陀山与九华山、峨嵋山、五台山合称中国佛教四大名山，而且又以山、水二美著称的名山，普陀山这座海山，充分显示着海和山的大自然之美，山海相连，显得更加秀丽雄伟。 
+                        </p>
+                        <p>
+                        <img src="https://dimg07.c-ctrip.com/images/tg/701/356/923/c5d363f407324f1f9cd7e1d671b76ce8_C_422_236.jpg" alt="普陀山普济寺圆通宝殿1abc">
+                        <img src="https://dimg06.c-ctrip.com/images/tg/634/287/778/e92a006babc44050986ae19f3982d85d_C_422_236.jpg" alt="普陀山南海观音2abc">
+                        </p>
+                        <p>
+                        普陀山是东海舟山群岛中的一个小岛，南北狭长，面积约12.5平方公里。岛上风光旖旎，洞幽岩奇，古刹琳宫，云雾缭绕。普陀山与九华山、峨嵋山、五台山合称中国佛教四大名山，而且又以山、水二美著称的名山，普陀山这座海山，充分显示着海和山的大自然之美，山海相连，显得更加秀丽雄伟。 
+                        </p>
+                        <p>
+                        <img src="https://dimg07.c-ctrip.com/images/tg/028/988/677/6c292fcaaef745c7ad97724b2abea024_C_422_236.jpg" alt="普陀山长寿桥abc">
+                        <img src="https://dimg02.c-ctrip.com/images/tg/850/800/774/28dd41d9c2c5434e9e6a836df2e4e56b_C_422_236.jpg" alt="普陀山多宝塔2abc">
+                        </p>
+                    </div>
+                    </div>
+                    <div id="tab3" class="tab-pane">
+                    <div class="map-wrap">
+                        <div class="map">
+                            <div style="width:80%;height:400px;" id="dituContent"></div>
+                        </div> 
+                        <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=rSHB6vaWzNZPnN1BCFgGMarVo33UdY99"></script>
+                        <script type="text/javascript">
+                        //创建和初始化地图函数：
+                        function initMap(){
+                            createMap();//创建地图
+                            setMapEvent();//设置地图事件
+                            addMapControl();//向地图添加控件
+                            addMarker();//向地图中添加marker
+                        }
+                        
+                        //创建地图函数：
+                        function createMap(){
+                            var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+                            var point = new BMap.Point(122.213931,29.991275);//定义一个中心点坐标
+                            map.centerAndZoom(point,11);//设定地图的中心点和坐标并将地图显示在地图容器中
+                            window.map = map;//将map变量存储在全局
+                        }
+                        
+                        //地图事件设置函数：
+                        function setMapEvent(){
+                            map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+                            map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+                            map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+                            map.enableKeyboard();//启用键盘上下左右键移动地图
+                        }
+                        
+                        //地图控件添加函数：
+                        function addMapControl(){
+                            //向地图中添加缩放控件
+                            var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+                            map.addControl(ctrl_nav);
+                                //向地图中添加缩略图控件
+                            var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+                            map.addControl(ctrl_ove);
+                                //向地图中添加比例尺控件
+                            var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+                            map.addControl(ctrl_sca);
+                        }
+                        
+                        //标注点数组
+                        var markerArr = [{title:"舟山市人民政府",content:"",point:"122.21385|29.991603",isOpen:0,icon:{w:23,h:25,l:23,t:21,x:9,lb:12}}
+                            ];
+                        //创建marker
+                        function addMarker(){
+                            for(var i=0;i<markerArr.length;i++){
+                            var json = markerArr[i];
+                            var p0 = json.point.split("|")[0];
+                            var p1 = json.point.split("|")[1];
+                            var point = new BMap.Point(p0,p1);
+                            var iconImg = createIcon(json.icon);
+                            var marker = new BMap.Marker(point,{icon:iconImg});
+                            var iw = createInfoWindow(i);
+                            var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+                            marker.setLabel(label);
+                            map.addOverlay(marker);
+                            label.setStyle({
+                                borderColor:"#fff",
+                                color:"#2e9197",
+                                cursor:"pointer"
+                            });
+                            
+                            (function(){
+                                var index = i;
+                                var _iw = createInfoWindow(i);
+                                var _marker = marker;
+                                _marker.addEventListener("click",function(){
+                                    this.openInfoWindow(_iw);
+                                });
+                                _iw.addEventListener("open",function(){
+                                    _marker.getLabel().hide();
+                                })
+                                _iw.addEventListener("close",function(){
+                                    _marker.getLabel().show();
+                                })
+                                label.addEventListener("click",function(){
+                                    _marker.openInfoWindow(_iw);
+                                })
+                                if(!!json.isOpen){
+                                label.hide();
+                                _marker.openInfoWindow(_iw);
+                                }
+                            })()
+                            }
+                        }
+                        //创建InfoWindow
+                        function createInfoWindow(i){
+                            var json = markerArr[i];
+                            var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+                            return iw;
+                        }
+                        //创建一个Icon
+                        function createIcon(json){
+                            var icon = new BMap.Icon("http://api.map.baidu.com/lbsapi/creatmap/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+                            return icon;
+                        }
+                        initMap();//创建和初始化地图
+                        </script>
+                    </div>
+                    <p>
+                        普陀山码头有船往返沈家门半升洞码头、朱家尖蜈蚣峙码头、上海等地。游人通常乘汽车、飞机到舟山沈家门或朱家尖，再乘船前往普陀山岛（船班情况受游客数量和天气影响可能会有变动，可行前咨询码头，或参考景区官网）。
+                    </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <footer id="footer"></footer>
     <script src="js/details.js"></script>
     <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 	<script src="js/moment.min.js"></script>
     <script src="js/es6.js"></script>
     <script src="js/date.js"></script>

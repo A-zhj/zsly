@@ -20,16 +20,16 @@
     color: #fff;
     margin: 0px 15px;
   }
-  /* 左边广告 */
+  /* 左边广告
   .left .sidebar{
     width: 100%;
     border:1px solid #ddd;
-    /* padding: 15px;  */
     margin-top:0.5rem;
+    position: fixed;
   }
   .left .sidebar img{
     width: 100%;
-  }
+  } */
   /*  */
   /* 右边景点 */
   .jd-list,.jd-list-mod{

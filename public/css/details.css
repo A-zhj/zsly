@@ -50,7 +50,7 @@ ul{
   position: absolute;
   top: 50%;
   background-position: center center;
-  background-image: url("../img/prev.png");
+  background-image: url("../img/details_img/prev.png");
   background-repeat: no-repeat;
   background-color:rgba(0,0,0,0.5);
   transform: translateY(-50%);
@@ -58,7 +58,7 @@ ul{
 /*右箭头*/
 #banner #next i{
   right: 0;
-  background-image: url("../img/next.png");
+  background-image: url("../img/details_img/next.png");
 }
        
 /* 鼠标移入箭头显示 */
@@ -177,12 +177,18 @@ transform: rotate(45deg)
 .xing{
   width:120px ;
   height: 30px;
-  background:url(../img/wujiaox.jpg)-6px -201px;
-background-size: 275px 245px;
+  background:url("../img/details_img/sprites.jpg")-6px -201px;
+  background-size: 275px 245px;
 }
 .address{
   display: flex;
   margin: 24px 0;
+}
+.price{
+  color:#ff6f2c;
+  font-size:20px;
+  margin-top:10px;
+  margin-left:20px;
 }
 .address p{
   font-size: 1px;
@@ -218,12 +224,12 @@ span{
 }
 .btn-success{
   background: #2e9197 !important;
-  margin-left: 180px;
+  margin-left: 120px;
   padding: 10px 40px !important;
 }
 .btn-success>a{
   color: #fff !important;
-  font-size: 24px;
+  font-size: 16px;
   text-align: center;
 }
 .btn-success:focus{
@@ -240,4 +246,30 @@ span{
   width: 100%;
   margin-top: 15px;
   position: relative; 
+}
+/* 选项卡导航 */
+
+.xxk{
+  margin-top: 428px;
+}
+#tab1 dd:first-child{
+  margin-top: 12px;
+}
+#tab1 dd{
+  margin-bottom:24px;
+}
+#tab2 p:first-child{
+  margin-top:12px;
+}
+#tab2 p{
+  text-align: justify;
+  display: flex;
+  justify-content: space-between;
+}
+#tab3 .map-wrap{
+  margin-top:12px;
+  margin-left:150px; 
+}
+#tab3 p{
+  margin-top:12px;
 }
