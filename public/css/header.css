@@ -38,7 +38,7 @@ header{margin-bottom: 1rem;}
   font-family: Microsoft YaHei;
   font-weight: bold;
 } 
-.header-center li.active{
+.header-center li.showUp{
   background-image: url("../img/header/nav_hover_xx2c.png");
   background-position-x: center;
   /*border-bottom: 5px solid #2e9197;*/
@@ -65,18 +65,18 @@ header{margin-bottom: 1rem;}
 }
 .header-right .style>div>img{
   position: absolute;
-  transition: all 1s;
+  /* transition: all 1s; */
   margin-top: 1.5rem
 }
 .header-right .style>div:hover>img{
-  transform: rotateX(180deg);
+  /* transform: rotateX(180deg); */
   cursor: pointer;
 }
-.header-right .style>div img:first-child{
+/*.header-right .style>div img:first-child{
   z-index: 2;
   backface-visibility: hidden;
   background: #fff;
-}
+}*/
 /* 客服窗口 */
 .header-main .imgActive{display: none;}
 .header-main .imgShow{display: block;}
@@ -107,7 +107,10 @@ header{margin-bottom: 1rem;}
   list-style: none;
   position: absolute;
 }
-.header-main .kefu>.lgImg>.left{top:135px;left:30px;}
+.header-main .kefu>.lgImg>.left{
+  top:135px;left:30px;
+  font-size: 14px;
+}
 .header-main .kefu>.lgImg>.right{
   position: absolute;
   width: 6rem;height: 124px;

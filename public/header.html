@@ -9,8 +9,8 @@
               <span>舟山旅行网</span>
             </div>
             <div class="header-center col-5 p-0">
-              <ul class="d-flex justify-content-center" >
-                <li class="active"><a href="index.html">大美舟山</a></li>
+              <ul class="d-flex justify-content-center show" >
+                <li class="showUp"><a href="index.html">大美舟山</a></li>
                 <li><a href="pubilc_list.html">舟山景点</a></li>
                 <li><a href="food.html">舟山美食</a></li>
                 <li><a href="siren.html">私人订制</a></li>
@@ -57,15 +57,15 @@
                 <div class="style col-6 p-0 d-flex justify-content-center">
                   <div>
                     <img src="img/header/wechat.png" alt="">
-                    <img src="img/header/wechat_hover.png" alt="">
+                    <!-- <img src="img/header/wechat_hover.png" alt=""> -->
                   </div>
                   <div>
                     <img src="img/header/sina.png" alt="">
-                    <img src="img/header/sina_hover.png" alt="">  
+                    <!-- <img src="img/header/sina_hover.png" alt="">   -->
                   </div>
                   <div>
                     <img src="img/header/QQ.png" alt="">
-                    <img src="img/header/QQ_hover.png" alt="">
+                    <!-- <img src="img/header/QQ_hover.png" alt=""> -->
                   </div>
                 </div>
               </div>
@@ -104,14 +104,17 @@
             </div>
           </div>
           <script>
-            /*鼠标进入li*/
+            /*鼠标点击跳转*/
             //事件委托找到li元素的父元素
-            $(".header-center ul")
-            //使用鼠标进入事件
-            .on("mouseenter","li",function(){
-              //就给这个li元素加active的class属性,然后移除别的兄弟的active的class属性
-              $(this).addClass("active").siblings('li').removeClass("active")
-            });
+            $(document).ready(function(){ 
+              $(".show li a").each(function(){ 
+                $this = $(this); 
+                if($this[0].href==String(window.location)){ 
+                  $("li").removeClass("showUp");
+                  $this.parent().addClass("showUp"); 
+                } 
+              }); 
+            }); 
             /*客服动画*/
             var smImg=document.getElementsByClassName("smImg")[0];
             var lgImg=document.getElementsByClassName("lgImg")[0];
