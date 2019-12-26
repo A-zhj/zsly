@@ -1,0 +1,343 @@
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,dt,dd{
+  margin: 0;padding: 0;}
+ul>li{list-style: none;}
+/* a{
+  text-decoration: none;
+  color: #333333;
+} 
+
+a:hover{
+color:#2e9197;
+}  */
+/* a:link { text-decoration: none;color: blue} 
+a:active { text-decoration:blink} 
+a:hover { text-decoration:underline;color: red} 
+a:visited { text-decoration: none;color: green}  */
+
+.head,.hader{
+  border:1px solid #ccc;
+  height: 145px;
+  position: relative;
+  margin: 10px 0;
+}
+/* .tima:after{
+  content: "";
+  display: block;
+  clear: both;
+} */
+.head>div>button{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  /* width: 86px;
+  height: 48px; */
+  float: left;
+  /* margin-left: 80%; */
+  text-align: center;
+  line-height: 24px;
+  margin-left: 5px;
+  /* position: absolute;
+  top: 60% ;left: 80%; */
+  background: #fff;
+  cursor: pointer;
+}
+.head>div :nth-child(5){
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 5px;
+  text-align: center;
+  width: 135px;
+  line-height: 48px;
+}
+.tima{
+ display: flex;
+ justify-content: flex-end;
+ 
+ margin:20px 10px
+}
+.head>span{
+  position: absolute;
+  top:55%;left: 3%;
+}
+.head>h1{
+  font-size: 25px;
+  color: #333333;
+  font-weight: 700;
+  margin: 10px 5px;
+}
+
+.tima>button :nth-child(1){
+  font-size: 15px;
+  color:#fa4400;
+  font-weight: 650;
+}
+.tima :first-child>span{
+  color:#ccc;
+}
+/* .tima :not( :first-child) :hover{
+  background-color: #2e9197;
+}
+/* .tima :focus{
+  background-color: #2E9197;
+} */
+/* .tima :hover span{
+  color: #fff;
+} */ 
+
+/*  */
+.hader{
+  position: relative;
+}
+.hader>:nth-child(1){
+  display: flex;
+  justify-content: flex-start;
+}
+.hader>div>h3{
+  font-size: 16px;
+  color:#333;
+  font-weight: 700;
+  margin-right: 8px;
+}
+.hader>div>.p1{
+  font-size: 12px;
+  color:#48B9C1;
+  display: flex;
+}
+.hader>div>.p1>a>img{
+  width: 16px;height: 15px;
+  margin-top: 2px;
+}
+.hader :nth-child(2)>ul{
+  display: flex;
+  justify-content: flex-start;
+}
+.hader :nth-child(2) :nth-child(1)>li{
+  color: #FFAE13;
+  font-size: 14px;
+  /* width: 40px; */
+  display: flex;
+  margin-right: 10px;
+}
+.hader :nth-child(2) :nth-child(2)>li{
+  color: #5a5a5a;
+  font-size: 14px;
+  display: flex;
+} 
+.hader :nth-child(2) :nth-child(1)>li>a>img,.hader :nth-child(2) :nth-child(2)>li>a>img{
+  width: 15px;height: 15px;
+  margin-top: 2px;
+}
+.hader :nth-child(3){
+  display: flex;
+  justify-content: flex-start;
+}
+.hader :nth-child(3)>p{
+  font-size: 12px;
+  color: #999;
+}
+.hader :nth-child(4) :nth-child(1){
+  display: flex;
+  justify-content: flex-end;
+ 
+}
+.hader :nth-child(4) :nth-child(1)>p{
+  font-size: 21px;
+  color: #f40;
+  margin-right: 40px;
+  margin-bottom: 30px;
+}
+.hader :nth-child(4) :nth-child(2){
+  display: flex;
+  justify-content: flex-end;
+}
+.hader :nth-child(4)>div>button{
+  width: 35px;height: 35px;
+  border:0px solid #fff;
+  font-size: 26px;
+  text-align: center;
+  line-height: 10px;
+  background: #48B9C1;
+  color: #fff;
+}
+.hader :nth-child(4)>div>.button1{
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.hader :nth-child(4)>div>.button2{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.hader :nth-child(4)>div>span{
+  /* 家里浏览器兼容问题 */
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 0px;
+  width: 35px;height: 35px;
+  display: inline-block;
+  text-align: center;
+  line-height: 33px;
+
+}
+.hader :nth-child(4){
+  position: absolute;
+  top: 20%;right: 10%;
+}
+.hader :nth-child(1)>h3,.hader :nth-child(1)>p{
+  position: relative;
+   top:20px;left: 20px;
+   
+  
+}
+.hader :nth-child(2)>ul{
+  position: relative;
+   top:20px;left: 20px;
+  
+}
+.hader :nth-child(3)>p{
+  position: relative;
+   top:20px;left: 20px;
+}
+/* .m1,.m2{
+  display: none;
+} */
+/*  */
+.bodys{
+  border:1px solid #ccc;
+  position: relative;
+  margin: 10px 0;
+}
+.bodys>.sd{
+  border-bottom: 1px solid #ccc;
+  background: -webkit-linear-gradient(top, #f0f0f0 0%, #eff0f2 100%);
+}
+.bodys :nth-child(1){
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 5px;
+  height: 41px;
+  font-size: 13px;
+  color: #999;
+  line-height: 45px;
+}
+.bodys :nth-child(1)>h3{
+  font-size: 18px;
+  line-height: 41px;
+  font-weight: 700;
+  margin-right: 5px;
+  color: #333;
+}
+.bodys :nth-child(1)>span{
+  line-height: 45px;
+  font-size: 13px;
+  color: #f40;
+  height: 41px;
+}
+.bodys :nth-child(2)>p{
+  margin-left: 30px;
+  margin-top: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 700;
+}
+.bodys>div>input{
+  
+  width: 300px;
+  height: 32px;
+  font-size: 14px;
+  padding-left: 10px;
+  /* display: block; */
+  margin: 10px 0px;
+}
+ .bodys :nth-child(3),.bodys :nth-child(4),.bodys :nth-child(5){
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 15%;
+  line-height: 32px;
+  /* margin-left: 80px; */
+} 
+.bodys :nth-child(3)>p,.bodys :nth-child(4)>p,.bodys :nth-child(5)>p{
+  font-size: 18px;
+  font-weight: 550;
+  color: #000;
+}
+.bodys :nth-child(3)>span,.bodys :nth-child(4)>span,.bodys :nth-child(5)>span{
+  font-size: 16px;
+  color: #fa0000;
+  line-height: 45px;
+  margin-left: 10px;
+  padding: 0px 27px;
+  /* background-image: url("../img/对话框.png");
+  background-repeat: no-repeat;
+  background-size: 190px;
+  background-position:10px 9px;  */
+}
+/* .bodys :nth-child(3)>img,.bodys :nth-child(4)>img,.bodys :nth-child(5)>img{
+  width: 32px;height: 32px;
+  margin-left: 0px;
+  margin-top: 10px;
+  display: none;
+} */
+.vali_info{
+ visibility: hidden;
+}
+/* .foot{
+  border: 1px solid #ccc;
+} */
+.foot>button{
+  width: 100%;
+  height: 42px;
+  line-height: 30px;
+  background: #48B9C1;
+  border-radius: 5px;
+  font-size: 24px;
+  color:#fff;
+}
+/*  */
+.price{
+  border: 1px solid #ccc;
+  width: 378px;
+  height: 184px;
+  margin: 10px 10px;
+}
+.price>.backgr :first-child,.price>.backgr :last-child,.price :nth-child(2)>span,.price :nth-child(3)>span{
+  margin: 0px 20px;
+}
+.price>.backgr{
+  border-bottom: 1px solid #ccc;
+  height: 84px;
+  background: -webkit-linear-gradient(top, #f0f0f0 0%, #eff0f2 100%);
+  display: flex;
+  justify-content: space-between;
+  line-height: 84px;
+}
+.price>.backgr :first-child{
+  font-size: 18px;
+  color: #000;
+  font-weight: 700;
+}
+.price>.backgr :last-child{
+  font-size: 18px;
+  color: #f40;
+  font-weight: 700;
+}
+.price :nth-child(2){
+  display: flex;
+  justify-content: space-between;
+}
+.price :nth-child(2)>span{
+  font-size: 14px;
+  color: #000;
+  font-weight: 700;
+  line-height: 50px
+}
+.price :nth-child(3){
+  display: flex;
+  justify-content: space-between;
+}
+.price :nth-child(3)>span{
+  font-size: 14px;
+  color: #9a9a9a;
+  font-weight: 700;
+  line-height: 50px
+}

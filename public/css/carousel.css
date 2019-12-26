@@ -1,0 +1,19 @@
+*{margin: 0;padding: 0;}
+   /* 轮播图 */
+.carousel-control-prev,
+.carousel-control-next{
+    width:4%;height:20%;
+    top:40%;
+    border-radius: 0.25rem;
+    background: #666;
+}
+.carousel-indicators li{
+    width: 0.6rem;height:0.6rem;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-left:0.2rem ;
+    margin-right: 0.2rem;
+}
+.carousel-indicators .active{
+    background-color: #2e9197;
+}

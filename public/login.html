@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <style>
+    #myModal .login-content{
+      padding: 0 28px;
+      
+    }
+    #myModal .login-title{
+      font-size: 16px;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-top: 20px ;
+      margin-top: auto
+    }
+    /* 模态显示框的宽高 */
+    #myModal .login-content{
+      text-align: center
+    }
+
+    /* 用户名，密码框 */
+    #myModal .login-body input{
+      display: block; /*input独占一行*/
+      color: #666;
+      padding: 10px 8px;
+      height: 30px;
+      margin: auto;
+      margin-bottom: 16px;
+      width: 20%
+    }
+    /* 图片样式 */
+
+    .login-header .login-title img{
+      width: 20px;
+      height: 20px;
+    }
+    /* 失败时出现的提示信息 */
+    .vali_fail{
+      display: block;
+      background-image:url("img/err.png");
+      background-repeat: no-repeat;
+      border:1px solid red;
+      background-color:#ddd;
+      color:Red;
+      padding-left:20px;
+      background-position: left center;
+      width: 50%;
+      margin: auto;
+    }
+    .login_uname{
+      display: none;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h2>舟山登录界面</h2>
+  <!-- 按钮触发模态框 -->
+  <span class="login_uname" ></span>
+  <!-- 模态框（Modal） -->
+  <div class="" id="myModal" >
+    <div class="dialog">
+      <div class="login-content">
+        <!-- 头部 -->
+        <div class="login-header">
+          <h4 class="login-title" id="myModalLabel">
+            <img src="./img/logo.png"  >用户名密码登录
+          </h4>
+        </div>
+        <div class="login-body">
+          <input type="text" placeholder="手机/邮箱/用户名" id="uname">
+          <input type="text" placeholder="密码" id="upwd">
+          <!-- 如果账户名或密码有误,显示提示信息 -->
+          <span class="vali_fail" style="display: none">账户名或密码有误</span>
+        </div>
+        <div class="login-footer">
+          <a href="reg.html">没有账号？请注册</a>
+          <button type="button" class="btn btn-primary" id="loginBtn" >登录</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+  </div>
+</div>  
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<!-- popper是一个提示插件 -->
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/apis.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

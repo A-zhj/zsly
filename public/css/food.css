@@ -1,0 +1,108 @@
+* {
+  /*重置样式的时候会初始化盒模型*/
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: 0;
+}
+a{color: #2e9197;font-size: 16px;}
+a:hover{text-decoration: none;}
+.container{background: #fff;}
+.mm,.etitle{
+  height: 48px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  background:linear-gradient(#2e9197,#48b9c1);
+  border-radius: 3px;
+}
+.mm>h1,.etitle>h1{
+  font-size: 28px;
+  line-height: 48px;
+  color: #fff;
+  margin: 0px 15px;
+}
+.food,.eatshop{margin-left: 0px;}
+
+.food .food_card,.eatshop .shop_card{
+  border: 1px solid #dee2e6;
+  margin-bottom: 5px
+}
+.food .food_card img,.eatshop .shop_card img{height: 198px;}
+.food_img,.shop_img{
+  overflow: hidden;
+}
+.food_img img,.shop_img img{
+  max-width: 100%;max-height: 100%;
+  transition: all 1s;
+}
+.food_img img:hover,.shop_img img:hover{
+  border-radius: 50px;
+  transform: scale(1.1);
+}
+.food_card,.shop_card{padding: 5px;}
+.food_card .ldetails,.shop_card .sdetails              {text-align: right;}
+.food .mtitle,.eatshop .stitle{
+  font-weight: bold;
+  /* 标题与图片的距离 */
+  margin-top: 6px;
+}
+.food .mdetails{
+  overflow: hidden;
+  text-overflow: ellipsis;/*超过的部分用...*/
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* 控制多行的行数*/
+  -webkit-box-orient: vertical;
+  margin:6px 0 0 0;/*上边距0.25rem,其余三个方向外边距为0*/
+}
+.food .mdetails a,.eatshop .sdetails a{color: #000;}
+.food .mrecom,.eatshop .srecom{
+  margin-top: 10px;
+  padding: 10px 0 0 10px;
+  border-top: 1px solid #dee2e6;
+  overflow: hidden;
+  text-overflow: ellipsis;/*超过的部分用...*/
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* 控制多行的行数*/
+  -webkit-box-orient: vertical;
+}
+.food .mrecom>p,.eatshop .srecom>p{
+  margin-bottom: 0;
+}
+.food .mrecom  a + a::before,
+.eatshop .srecom  a + a::before
+  {content: " 、";}
+  .eatshop .stitle img{
+    width: 24px;height: 24px;
+    margin: 0 5px;
+  }
+.eatshop .shop_card>.sdetails{
+  text-align: left;
+}
+.eatshop .shop_card>.sdetails a{
+  color: #2e9197;
+  font-weight: bold;
+}
+.eatshop .shop_card>.sdetails span{
+  font-size: 14px;
+}
+.eatshop .shop_card>.sdetails a img{
+  width: 100px;height: 15px;
+}
+.pagination-nick{
+  display: flex;
+  justify-content:flex-end;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+
+.pagination-nick>div{
+  border: 1px solid #ccc;
+}
+.pagination-nick>div>button{
+  height: 30px;
+}
+.pagination-nick>div>input{
+  width: 40px;
+  text-align: center;
+}

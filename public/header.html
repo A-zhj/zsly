@@ -1,0 +1,102 @@
+
+<header id="header" class="container">
+    <div class="row mx-0">
+      <div class="col-12 px-0">
+        <div class="header-main">
+          <div class="header-content row text-center mx-0">
+            <div class="header-left col-3 px-0 justify-content-start">
+              <img src="img/header/logo.png" alt="">
+              <span>舟山旅行网</span>
+            </div>
+            <div class="header-center col-5 p-0">
+              <ul class="d-flex justify-content-center" >
+                <li class="active"><a href="index.html">大美舟山</a></li>
+                <li><a href="pubilc_list.html">舟山景点</a></li>
+                <li><a href="food.html">舟山美食</a></li>
+                <li><a href="siren.html">私人订制</a></li>
+                <li><a href="about-us.html">关于我们</a></li>
+              </ul>
+            </div>
+            <div class="header-right col-2 offset-1 p-0">
+              <div class="row">
+                <div class="regist_login col-6 p-0 d-flex justify-content-end">
+                  <a href="login.html">登录</a>
+                  <span>|</span>
+                  <a href="reg.html">注册</a>
+                </div>
+                <div class="style col-6 p-0 d-flex justify-content-center">
+                  <div>
+                    <img src="img/header/wechat.png" alt="">
+                    <img src="img/header/wechat_hover.png" alt="">
+                  </div>
+                  <div>
+                    <img src="img/header/sina.png" alt="">
+                    <img src="img/header/sina_hover.png" alt="">  
+                  </div>
+                  <div>
+                    <img src="img/header/QQ.png" alt="">
+                    <img src="img/header/QQ_hover.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         <!-- 轮播图 -->
+          <div id="lunbo"></div>
+         <!--  -->
+          <div class="kefu">
+            <div class="smImg">
+              <img src="img/header/customerservice2.png" alt="">
+              <p>客服</p>
+            </div>
+            <div class="lgImg">
+              <img src="img/header/customerservice1.png" alt="">
+              <ul class="left">
+                <li>在线</li>
+                <li>客服</li>
+              </ul>
+              <div class="right">
+                <ul>
+                  <li>
+                    <a href=""><img src="img/header/new_online_2.png" alt=""></a>
+                    <a href="">客服一号</a>
+                  </li>
+                  <li>
+                    <a href=""><img src="img/header/new_online_2.png" alt=""></a>
+                    <a href="">客服二号</a>
+                  </li>
+                  <li>
+                    <a href=""><img src="img/header/new_online_2.png" alt=""></a>
+                    <a href="">客服三号</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <script>
+            /*鼠标进入li*/
+            //事件委托找到li元素的父元素
+            $(".header-center ul")
+            //使用鼠标进入事件
+            .on("mouseenter","li",function(){
+              //就给这个li元素加active的class属性,然后移除别的兄弟的active的class属性
+              $(this).addClass("active").siblings('li').removeClass("active")
+            });
+            /*客服动画*/
+            var smImg=document.getElementsByClassName("smImg")[0];
+            var lgImg=document.getElementsByClassName("lgImg")[0];
+            var kefu=document.getElementsByClassName("kefu")[0];
+            kefu.onmouseenter=function(){
+              smImg.style.display="none";
+              lgImg.style.display="block";
+            }
+            kefu.onmouseleave=function(){
+              smImg.style.display="block";
+              lgImg.style.display="none";
+            }
+          </script>
+        
+        </div>
+      </div>
+    </div>
+</header>

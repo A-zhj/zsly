@@ -1,0 +1,39 @@
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,dt,dd{
+  /* 默认有边距，都要清除 */
+  margin: 0;
+  padding: 0;
+  /*字体设置*/
+  /* font-size: 14px; */
+  font-family: "Microsoft Yahei",sans-serif;
+  color: #5a5a5a;
+  /* 去掉列表的原点 */
+  list-style: none;
+  /* 默认鼠标 */
+  cursor: default;
+}
+ul>li{
+  list-style: none;
+}
+body{background: #f2f3f4;
+  font-family: "微软雅黑";}
+
+/*行内块元素*/
+input,img{
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  outline-style: none;
+  vertical-align: bottom; 
+}
+
+textarea{
+  /* 边框清零 */
+  border:none;
+  /* 轮廓线清零 */
+  outline: none;
+  /* 防止文本域被随意拖拽 */
+  resize: none;
+}
+body{
+  background-color: #f7f7f7;
+}

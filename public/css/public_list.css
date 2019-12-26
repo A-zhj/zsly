@@ -1,0 +1,188 @@
+  /*外边距清零 */
+  .container .left,.container .main,.jd-list .leftimg,.jd-list .rightsub{
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .container .left{
+    padding-right:0.2rem;
+  }
+  /* 标题 */
+  .title{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border:0px solid #ccc;
+    background: -webkit-linear-gradient(top, #2e9197 0%, #48b9c1 100%);
+    height: 48px;
+  }
+  .title>h1{
+    font-size: 28px;
+    line-height: 48px;
+    color: #fff;
+    margin: 0px 15px;
+  }
+  /* 左边广告 */
+  .left .sidebar{
+    width: 100%;
+    border:1px solid #ddd;
+    /* padding: 15px;  */
+    margin-top:0.5rem;
+  }
+  .left .sidebar img{
+    width: 100%;
+  }
+  /*  */
+  /* 右边景点 */
+  .jd-list,.jd-list-mod{
+    border:1px solid #ddd;
+    margin-top:0.5rem;
+  }
+  /* 每个景点 */
+  .jd-list-mod{
+    margin:0.5rem;
+  }
+  /* 景点左边图片 */
+  .leftimg{
+    position:relative;
+  }
+  .leftimg img{
+    width: 100%;
+    height: 100%;
+  }
+  /* 遮罩层
+  .leftimg:before{
+    content:"";
+    background: url(img/details_img/fangda.png) no-repeat rgba(0,0,0,0.3) 50% 50%;
+    opacity:0;
+    position:absolute;
+    transition: all 1s;
+    width:100%;
+    height:100%;
+    } */
+  
+  .leftimg:hover:before{
+    opacity: 1;
+  }
+  /* 整个右边 */
+ .rightsub dl{
+   margin:0;
+   padding:10px 0 15px 20px;
+ }
+ /* 塔 */
+ .rightsub dl dt img{
+    margin-top:-12px;
+ }
+ /* 标题 */
+ .rightsub dl dt a{
+   color:#616161 !important;
+   font-size: 24px;
+ }
+ .rightsub dl dd{
+   height:35px;
+   margin:0;
+   font-size:16px;
+   color:#666;
+ }
+ /* 地址超出范围显示省略号 */
+ .rightsub dl:first-child dd{
+   padding-top:8px;
+   overflow: hidden;
+   text-overflow:ellipsis;
+   white-space: nowrap; 
+ }
+ /* 价格颜色和字体 */
+ .rightsub dl:last-child dd span{
+   color:#ff6f2c;
+   font-size:20px;
+ }
+ /* 推荐指数精灵图 */
+ .sprites{   
+   width:100px;
+   height:30px;
+   position: absolute;
+   top:86px;
+   left:90px;
+   background-image:url("../img/details_img/jinglintu.jpg");
+   background-size: 13.1rem 12.2rem;
+  background-position: -106px -163px;
+ }
+ /* 订购按钮 */
+ .rightsub dl>a:last-child{
+   position: absolute;
+   top:110px;
+   right:100px;
+   padding: 5px;
+   border-radius: 5px;
+   background: #2e9197;
+   color:#fff;
+ }
+ .rightsub dl>a:last-child:hover{
+   background: #48b9c1;
+   text-decoration: none;
+ }
+ .rightsub dl>a:last-child:focus{
+  box-shadow: 0 0 0 0.2rem rgba(75, 185, 193, 0.5);
+ }
+ /* 分页 */
+ .pagination{
+    margin-top: 2rem;
+    float: right;
+ }
+ .page-link{
+   border-radius: 0.25rem !important;
+ }
+ .page-item+.page-item{
+   margin-left:0.5rem;
+ }
+ 
+ .carousel-control-prev,.carousel-control-next{
+  width:4%;height:20%;
+  top:40%;
+  background-color:#aaa;
+  border-radius: 0.25rem;
+}
+.carousel-indicators li{
+  width:0.7rem;height:0.7rem;
+  border-radius: 50%;
+  background:#fff;
+}
+.page-item.active .page-link{
+  z-index: 1;
+  color: #fff;
+  background-color: #2e9791;
+  border-color: #48b9c1;
+}
+.carousel-control-prev,
+.carousel-control-next{
+    width: 3%;height: 20%;
+    top:40%;
+    border-radius: 0.25rem;
+    background:#666;
+}
+.carousel-indicators li{
+    width: 0.6rem;;height:0.6rem;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+}
+.carousel-indicators .active{
+  background: #48b9c1;
+}
+
+.pagination-nick{
+  display: flex;
+  justify-content:flex-end;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+
+.pagination-nick>div{
+  border: 1px solid #ccc;
+}
+.pagination-nick>div>button{
+  height: 30px;
+}
+.pagination-nick>div>input{
+  width: 40px;
+  text-align: center;
+}

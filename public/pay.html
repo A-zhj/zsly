@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/pay.css">
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="row mx-0">
+      <div class="col-9 px-0">
+        <div class="head">
+          <h1>普陀山+往返票</h1>
+          <span>使用日期 :</span>
+          <div class="tima">
+            <button class="btn">
+              今天12-10
+              <span>不可预订</span>
+            </button>
+            <button class="btn">
+              明天12-11
+              <span class="pri">¥192</span>
+            </button>
+            <button class="btn">
+              后天12-12
+              <span>¥192</span>
+            </button>
+            <button class="btn">
+              12-13
+              <span>¥192</span>
+            </button class="btn">
+            <div>
+                <span>其他日期</span> |
+                <span><img src="img/pay/日历.png" alt=""></span>
+            </div>
+          </div>
+        </div>
+        <div class="hader">
+          <div>
+            <h3>成人票</h3>
+            <p class="p1">购票须知<a href=""><img src="img/pay/下拉 三角.png" alt=""></a></p>
+          </div>
+          <div>
+            <ul>
+              <li><a href=""><img src="img/pay/感叹号.png" alt=""></a>有条件退</li>
+              <li><a href=""><img src="img/pay/输入正确 (1).png (1).png" alt=""></a>入园须知</li>
+            </ul>
+          </div>
+          <div>
+            <p>最多可购9份!</p>
+          </div>
+          <div>
+            <div>
+              <p>¥0</p>
+            </div>
+            <div class="shopp">
+              <button class="button1 btn">-</button>
+              <span style="display: inline-block;">0</span>
+              <button class="button2 btn">+</button>
+            </div>
+          </div>
+        </div>
+        <div id="strInput">
+          <div class="bodys">
+            <div class="sd">
+              <h3>出行人信息</h3>
+              需填写<span>1份</span>出行人
+            </div>
+            <div>
+              <p>出行人1</p>
+            </div>
+            <div>
+              <p>中文姓名：</p><input class="input1" type="text" name="uname" placeholder="必须与身份证上姓名一致"><span class="vali_info span1">请填写正确的中文姓名</span>
+              
+            </div>
+            <div>
+              <p>个人电话：</p><input class="input2" type="text" name="phone" placeholder="请输入电话号码"><span class="vali_info span2">请填写正确的电话号码</span>
+            </div>
+            <div>
+              <p>身份证号：</p><input class="input3" type="text" name="idcard" placeholder="请输入身份证"><span class="vali_info span3">请填写正确的身份证号</span>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="bodys m1">
+          <div class="sd">
+          </div>
+          <div>
+            <p>出行人2</p>
+          </div>
+          <div>
+            <p>中文姓名：</p><input type="text" placeholder="必须与身份证上姓名一致" name="uname"><span class="vali_info">请填写正确的中文姓名</span>
+          </div>
+          <div>
+            <p>个人电话：</p><input type="text" placeholder="请输入电话号码" name="phone"><span class="vali_info">请填写正确的电话号码</span>
+          </div>
+          <div>
+            <p>身份证号：</p><input type="text" placeholder="请输入身份证" name="idcard"><span class="vali_info">请填写正确的身份证号</span>
+          </div>
+        </div> -->
+        <!-- <div class="bodys m2">
+          <div class="sd">
+          </div>
+          <div>
+            <p>出行人3</p>
+          </div>
+          <div>
+            <p>中文姓名：</p><input type="text" placeholder="必须与身份证上姓名一致" name="uname"><span class="vali_info">请填写正确的中文姓名</span>
+          </div>
+          <div>
+            <p>个人电话：</p><input type="text" placeholder="请输入电话号码" name="phone"><span class="vali_info">请填写正确的电话号码</span>
+          </div>
+          <div>
+            <p>身份证号：</p><input type="text" placeholder="请输入身份证" name="idcard"><span class="vali_info">请填写正确的身份证号</span>
+          </div>
+        </div> -->
+        <div class="foot">
+          <button class="btn zf">支付</button>
+        </div>
+      </div>
+      <div class="col-3 px-0">
+        <div class="price">
+          <div class="backgr">
+            <span>订单总额</span>
+            <span class="total">¥0</span>
+          </div>
+          <div>
+            <span>--&nbsp;:&nbsp;--</span>
+            <span class="spandetails">¥0</span>
+          </div>
+          <div>
+            <span>成人票</span>
+            <span class="crspan">¥0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/pay.js"></script>
+</body>
+</html>
