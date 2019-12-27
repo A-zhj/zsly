@@ -101,7 +101,7 @@
    position: absolute;
    top:86px;
    left:90px;
-   background-image:url("../img/details_img/jinglintu.jpg");
+   background-image:url("../img/details_img/sprites.jpg");
    background-size: 13.1rem 12.2rem;
   background-position: -106px -163px;
  }
@@ -157,6 +157,9 @@
     top:40%;
     border-radius: 0.25rem;
     background:#666;
+}
+.carousel-indicators{
+  margin-left: -9%;
 }
 .carousel-indicators li{
     width: 0.6rem;;height:0.6rem;

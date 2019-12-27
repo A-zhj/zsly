@@ -7,7 +7,7 @@ a{
 a:hover{
   text-decoration: none !important;
   color:#2e9197 ;
-        }
+  }
 .container{
   max-width: 1024px !important;
   height: 100%;
@@ -177,7 +177,7 @@ transform: rotate(45deg)
 .xing{
   width:120px ;
   height: 30px;
-  background:url("../img/details_img/sprites.jpg")-6px -201px;
+  background:url("../img/details_img/sprites.jpg")-140px -201px;
   background-size: 275px 245px;
 }
 .address{
@@ -211,6 +211,7 @@ h5{
 .pf{
   color:#2e9197 ;
   font-size: 26px;
+  margin-left: 5px;
 }
 span{
   font-size: 1px;
@@ -246,6 +247,12 @@ span{
   width: 100%;
   margin-top: 15px;
   position: relative; 
+}
+#date>label{
+  margin:0
+}
+#rangedate{
+  border:1px solid #999;
 }
 /* 选项卡导航 */
 

@@ -141,7 +141,7 @@ header{margin-bottom: 1rem;}
 }*/
 
 
-/*  */
+/*登录 */
 
 .hide{
   display: none;
@@ -237,7 +237,7 @@ h3{
 }
 .login a:link{
   text-decoration: none;
-  color: #666;
+  color: #666 !important;
 }
 .dl{
   width: 100%;
