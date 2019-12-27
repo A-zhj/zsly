@@ -10,9 +10,9 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery-3.4.1.min.js"></script>
 </head>
-<body>
+<body> 
   <!--  -->
-
+  <header id="header"></header>
   <div class="container">
     <div class="row mx-0">
       <div class="col-9 px-0">
@@ -77,14 +77,14 @@
               <p>出行人1</p>
             </div>
             <div>
-              <p>中文姓名：</p><input class="input1" type="text" name="uname" placeholder="必须与身份证上姓名一致"><span class="vali_info span1">请填写正确的中文姓名</span>
+              <p>中文姓名：</p><input class="input1" type="text" name="uname" placeholder="必须与身份证上姓名一致"><span class="vali_info">请填写正确的中文姓名</span>
               
             </div>
             <div>
-              <p>个人电话：</p><input class="input2" type="text" name="phone" placeholder="请输入电话号码"><span class="vali_info span2">请填写正确的电话号码</span>
+              <p>个人电话：</p><input class="input2" type="text" name="phone" placeholder="请输入电话号码"><span class="vali_info">请填写正确的电话号码</span>
             </div>
             <div>
-              <p>身份证号：</p><input class="input3" type="text" name="idcard" placeholder="请输入身份证"><span class="vali_info span3">请填写正确的身份证号</span>
+              <p>身份证号：</p><input class="input3" type="text" name="idcard" placeholder="请输入身份证"><span class="vali_info">请填写正确的身份证号</span>
             </div>
           </div>
         </div>
@@ -145,7 +145,7 @@
   <div class="mubu"></div>
   <div class="motai hide">
     <div class="motai_title">
-      <span>购票须知</span><span onclick="Hide()" class="guanbi">关闭</span>
+      <span>购票须知</span><span class="guanbi">关闭</span>
     </div>
     <div class="xianqin">
       <div> 
@@ -193,7 +193,11 @@
   </div>
   
   <!--  -->
+  <footer id="footer"></footer>
 
+  
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
   <script src="js/pay.js"></script>
 </body>
 </html>

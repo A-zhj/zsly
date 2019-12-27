@@ -160,7 +160,7 @@ for(var i=0;i<names.length;i++){
 //表单验证--中文名验证
 var uname = document.getElementsByName("uname");
 //console.log(uname)
-var spans = document.querySelectorAll(".span1,.span2,.span3");
+// var spans = document.querySelectorAll(".span1,.span2,.span3");
 for(var i=0;i<uname.length;i++){
   uname[i].onblur = function(){
     var n = this.value;
@@ -254,8 +254,17 @@ for(var i=0;i<phones.length;i++){
 var button = document.querySelector(".zf")
 // console.log(button)
 button.onclick = function(){
-  alert("请稍等....")
-  window.location.href="http://wwww.baidu.com"
+  // if(){
+
+  // }
+  let isLogin = !(sessionStorage.getItem('uname')===null);
+  // console.log(isLogin);
+  if(isLogin==true){
+    alert("请稍等....")
+    window.location.href="http://wwww.baidu.com"
+  }else{
+    alert("请先登录......")
+  }
 }
 
 // 模态框
@@ -269,11 +278,19 @@ var triangle = document.querySelector(".hader>div>.p1>a>img")
     triangle.onclick = function(e){
       e.preventDefault();
       document.querySelector('.motai').classList.remove('hide');
+      document.querySelector(".mubu").style.display = "block";
       document.querySelector(".mubu").style.position = "absolute";
       document.querySelector(".mubu").style.background = "rgba(0,0,0,0.5)";
+     
     }
-    function Hide(){
+    
+    var gb = document.querySelector(".guanbi")
+    console.log(gb);
+    gb.onclick = function(){
       document.querySelector('.motai').classList.add('hide');
       document.querySelector(".mubu").style.position = "";
       document.querySelector(".mubu").style.background = "#fff";
+      document.querySelector(".mubu").style.display = "none";
     }
+
+
