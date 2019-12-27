@@ -125,12 +125,12 @@ td{
 .input{
   width: 75%;height: 38px;
 }
-table>tr>button{
+button{
   width: 30%;height: 38px;
   border: 0px solid #cccccc;
   background: -webkit-linear-gradient(top, #48b9c1 0%, #2e9791 100%);
   border-radius: 5px;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 500;
   color: #fff;
 }
