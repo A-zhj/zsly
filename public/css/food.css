@@ -5,7 +5,7 @@
   box-sizing: border-box;
   outline: 0;
 }
-a{color: #2e9197;font-size: 16px;}
+a{color: #2e9197;font-size: 14px;}
 a:hover{text-decoration: none; color:#666}
 .container{background: #fff;}
 .mm,.etitle{
