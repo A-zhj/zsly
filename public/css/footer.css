@@ -35,7 +35,7 @@ footer{margin-top: 50px;}
   text-decoration: none;
   cursor: pointer;
 }
-.footer-content>ul>li a:hover{color: #2e9197;}
+.footer-content>ul>li>a:hover{color: #666;}
 .footer-content>ul>li a:visited{background: #000;}
 .footer-content>.des{width: 100%;}
 .footer-content>.des span{
