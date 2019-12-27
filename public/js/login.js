@@ -2,11 +2,22 @@
   $(function(){
     /*
       判断，当session对象里有uname对象，说明用户已经登录，显示欢迎的字样
+      登录后，注销按钮显示，点击注销按钮，清除session对象，跳转回首页
     */
     if(sessionStorage.getItem("uname")!==null){
       let uname = sessionStorage.getItem("uname");
       $("a.header-login").remove().append();
-      $(`<span class="header-login" style="color:#333">${uname}</span>`).prependTo('.regist_login')
+      $(`<span class="header-login" style="color:#333">${uname}</span>`).prependTo('.regist_login');
+      $('.header-logout').html('注销').removeAttr('href').off("click").on("click",function(){
+        sessionStorage.removeItem("uname");
+        showMessage('注销中','error',1000);
+        setTimeout(() => {
+          let url=document.location.href; 
+          //跳转首页
+          location=url
+        }, 1000);
+      })
+
     }
     /********************************/ 
     //当用户确认登录后，删除模态框幕布
@@ -38,7 +49,7 @@
       //点击时获取用户名和密码信息
       let uname = $(".uname>.w-input").val();
       let upwd = $(".upwd>.w-input").val();
-      console.log(uname,upwd)
+      //console.log(uname,upwd)
       //定义正则验证  6-12位字母、数字组合
       let log = /^[A-Za-z0-9]{6,12}$/
       //验证
@@ -75,5 +86,7 @@
       })
       
     })
+
+    
   })
 })()

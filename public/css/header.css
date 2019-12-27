@@ -279,3 +279,7 @@ h3{
 .login-other .icon-wechat{
   background:url("../img/login/wechat.png");
 }
+
+.header-logout{
+  cursor: pointer;
+}
