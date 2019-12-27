@@ -342,3 +342,48 @@ a:visited { text-decoration: none;color: green}  */
   font-weight: 700;
   line-height: 50px
 }
+
+/* 模态款 */
+.motai{
+  width: 600px;height: 400px;
+  position: absolute;
+  top: 40%;left: 45%;
+  transform: translate(-300px,-250px);
+  background: #f5f5f5;
+  border: 1px solid #f0f0f0;
+}
+.motai>.motai_title{
+  background-color: #bbb;
+  font-size: 14px;
+}
+.motai>.motai_title{
+display: flex;
+justify-content: space-between;
+}
+.motai>.motai_title :first-child{
+  margin: 5px 10px;
+  font-size: 16px;
+}
+.motai>.motai_title :last-child{
+  margin: 5px 10px;
+  font-size: 16px;
+  color: #48B9C1;
+  cursor: pointer;
+}
+
+.motai>.xianqin{
+  height: 350px;
+  box-shadow: 0 0px 4px rgba(0, 0, 0, .12);
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: 14px;
+}
+
+.hide{
+  display: none;
+}
+.mubu{
+  width: 100%;height: 2000px;
+  top: 0px;
+}
+

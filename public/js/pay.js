@@ -42,7 +42,7 @@ for(var i=1;i<timas.length;i++){
     //将结果追加到页面
     totaldetails.innerHTML = `¥${total.toFixed(2)}`;
     totaltitle.innerHTML = `${title}+往返票`
-    totap.innerHTML = `¥${total.toFixed(2)}/人`;
+    totap.innerHTML = `¥${total}/人`;
     valuespan.innerHTML = 1;
     crspan.innerHTML = `¥${total.toFixed(2)}`
     tota.innerHTML=`¥${total.toFixed(2)}`;
@@ -197,7 +197,7 @@ for(var i=0;i<phones.length;i++){
     //console.log(n);
     var use_phone = /^((13[0-9])|(17[0-1,6-8])|(15[^4,\\D])|(18[0-9]))\d{8}$/;
     if(n==""){
-        this.nextElementSibling.innerHTML = "用户名不能为空";
+        this.nextElementSibling.innerHTML = "手机号不能为空";
         this.nextElementSibling.style.color = "red"
         this.nextElementSibling.style.fontSize = "16px"
       //this.nextElementSibling.innerHTML = " ";
@@ -228,7 +228,7 @@ for(var i=0;i<phones.length;i++){
     //console.log(n);
     var use_idcard = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/;
     if(n==""){
-        this.nextElementSibling.innerHTML = "用户名不能为空";
+        this.nextElementSibling.innerHTML = "身份证不能为空";
         this.nextElementSibling.style.color = "red"
         this.nextElementSibling.style.fontSize = "16px"
       return;
@@ -249,16 +249,31 @@ for(var i=0;i<phones.length;i++){
 }
 }
 
-var triangle = document.querySelector(".hader>div>.p1>a>img")
-//console.log(triangle)
-triangle.onclick = function(e){
-  e.preventDefault();//取消默认行为
-  alert("1、最早可订明日票最晚需在出行前1天16:30前购买。2、需同时满足如下条件的游客方可预订：年龄：18周岁（不含）以上身高：1.5米（不含）以上。3、选择的使用日期当天有效，过期概作废")
-}
+
 
 var button = document.querySelector(".zf")
-console.log(button)
+// console.log(button)
 button.onclick = function(){
   alert("请稍等....")
   window.location.href="http://wwww.baidu.com"
 }
+
+// 模态框
+
+var triangle = document.querySelector(".hader>div>.p1>a>img")
+// console.log(triangle)
+// triangle.onclick = function(e){
+//   e.preventDefault();//取消默认行为
+// }
+
+    triangle.onclick = function(e){
+      e.preventDefault();
+      document.querySelector('.motai').classList.remove('hide');
+      document.querySelector(".mubu").style.position = "absolute";
+      document.querySelector(".mubu").style.background = "rgba(0,0,0,0.5)";
+    }
+    function Hide(){
+      document.querySelector('.motai').classList.add('hide');
+      document.querySelector(".mubu").style.position = "";
+      document.querySelector(".mubu").style.background = "#fff";
+    }
