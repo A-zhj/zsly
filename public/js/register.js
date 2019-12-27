@@ -19,7 +19,7 @@
           $('.'+type+'-message').remove()
       },time)
     }
-    /*服务器发送回来的是一个对象，里面有text:验证码文本，data:验证码对象。预先设置一个空的img对象，发送请求，接收响应，为这个img对象的src添加data对象-即svg图形。Text文本可以放在session对象里，发送请求时，前台验证验证码是否跟session对象里的一致*/
+    /*服务器发送回来的是一个对象，里面有text:验证码文本，data:验证码对象。预先设置一个空的img对象，发送请求，接收响应，为这个span对象的src添加data对象-即svg图形。Text文本可以放在session对象里，发送请求时，前台验证验证码是否跟session对象里的一致*/
     //多次使用，封装函数
     function Yzm(){
       $.ajax({
@@ -27,8 +27,8 @@
         type:"get",
         dataType:"json",
         success:(result)=>{
-          console.log(1)
-          console.log(result)
+          //console.log(1)
+          //console.log(result)
           var imgYzm = document.getElementById('imgYzm');
           imgYzm.innerHTML = result.data
           sessionStorage.setItem("imgYzm",result.text.toLowerCase());
@@ -100,15 +100,7 @@
         return;
       }
     })
-    //(6)验证码格式
-    // $captcha.on("blur",()=>{
-    //   if(!$captcha.val()){
-    //     $("#editCaptcha").next().removeClass().addClass("vali_fail");
-    //     return
-    //   }else{
-    //     $("#editCaptcha").next().removeClass().addClass("vali_success")
-    //   }
-    // })
+
     //点击验证码图片时，切换验证码图片
     $("#editCaptcha").off("click").on("click",()=>{
       Yzm()
