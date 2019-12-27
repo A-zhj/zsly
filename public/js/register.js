@@ -19,13 +19,32 @@
           $('.'+type+'-message').remove()
       },time)
     }
+    /*服务器发送回来的是一个对象，里面有text:验证码文本，data:验证码对象。预先设置一个空的img对象，发送请求，接收响应，为这个img对象的src添加data对象-即svg图形。Text文本可以放在session对象里，发送请求时，前台验证验证码是否跟session对象里的一致*/
+    //多次使用，封装函数
+    function Yzm(){
+      $.ajax({
+        url:config.baseURL+"user/captcha",
+        type:"get",
+        dataType:"json",
+        success:(result)=>{
+          console.log(1)
+          console.log(result)
+          var imgYzm = document.getElementById('imgYzm');
+          imgYzm.innerHTML = result.data
+          sessionStorage.setItem("imgYzm",result.text.toLowerCase());
+          //showMessage(result.msg,"error",2000)
+        }
+      })
+    }
+    /*首次加载，接收验证码，描绘*/
+    Yzm()
     //先保存用户需要的数值
     let $uname = $(".uname>input");
     let $upwd = $(".upwd>input");
     let $dpwd = $(".ag-upwd>input");
     let $phone = $(".phone>input");
     let $email = $(".email>input");
-    //let $captcha = $(".captcha>input");
+    let $captcha = $(".captcha>input");
     //console.log(uname,upwd,dpwd,phone,email)
     /*用户名密码的正则*/ 
     let unameReg = /^[A-Za-z0-9]{6,12}$/;
@@ -35,7 +54,7 @@
     let emailReg = /^\w+(\.\w+)*@\w+(\.\w+)+$/; 
   
   
-    /*前台验证用户输入的内容,当有验证错误的情况，停止*/
+    /*前台验证用户输入的内容,当有验证错误的情况，提示*/
     //(1)用户名
     $uname.on("blur",()=>{
       if(unameReg.test($uname.val())){
@@ -91,15 +110,49 @@
     //   }
     // })
     //点击验证码图片时，切换验证码图片
-    // $("#editCaptcha").off("click").on("click",()=>{
-    //   var imgYzm=document.getElementById('imgYzm')
-    //   imgYzm.src="http://176.136.17.192:5050/user/captcha?d="+Math.random();
-    // })
+    $("#editCaptcha").off("click").on("click",()=>{
+      Yzm()
+    })
 
     $(".reg-btn").off("click").on("click",()=>{
+      /*点击发送数据前，先检查数据的格式是否正确*/
+      if(unameReg.test($uname.val())){
+        $uname.next().removeClass().addClass("vali_success")
+      }else{
+        $uname.next().removeClass().addClass("vali_fail");
+        return;
+      }
+      if(unameReg.test($upwd.val())){
+        $upwd.next().removeClass().addClass("vali_success")
+      }else{
+        $upwd.next().removeClass().addClass("vali_fail");
+        return;
+      }
+      if(unameReg.test($dpwd.val())&&$dpwd.val()==$upwd.val()){
+        $dpwd.next().removeClass().addClass("vali_success")
+      }else{
+        $dpwd.next().removeClass().addClass("vali_fail");
+        return;
+      }
+      if(phoneReg.test($phone.val())){
+        $phone.next().removeClass().addClass("vali_success")
+      }else{
+        $phone.next().removeClass().addClass("vali_fail");
+        return;
+      }
+      if(emailReg.test($email.val())){
+        $email.next().removeClass().addClass("vali_success")
+      }else{
+        $email.next().removeClass().addClass("vali_fail");
+        return;
+      }
+      /*验证码前台验证,当发送的验证码(忽略大小写)与session中存储的验证码内容不一致，提示，终止发送*/
+      if(!($captcha.val().toLowerCase()==sessionStorage.getItem("imgYzm"))){
+        showMessage('验证码错误','error',2000);
+        return
+      }
       let url=config.baseURL+"user/reg";
-      let obj =  {"uname":$uname.val(),"upwd":$upwd.val(),"phone":$phone.val(),"email":$email.val()} 
-
+      let obj =  {"uname":$uname.val(),"upwd":$upwd.val(),"phone":$phone.val(),"email":$email.val()}     
       $.ajax({
         url,
         type:"post",
@@ -110,7 +163,7 @@
             showMessage(result.msg,"success",2000)
             setTimeout(() => {
               //跳转登录界面
-              window.location.href="http://127.0.0.1:5501/zsly/public/index.html"
+              window.location.href="http://127.0.0.1:5504/zsly/public/index.html"
             }, 3000);
           }else{
             showMessage(result.msg,"error",2000)

@@ -213,8 +213,8 @@ h3{
 #modal .uname input,#modal .upwd input{
   width: 100%;
   border:1px solid #ccc ;
-  padding: 2px;
-  padding-left:28px; 
+  height: 35px;
+  padding: 2px 2px 2px 28px; 
   background: url("../img/login/name.png") no-repeat 3px;
   color: #666;
 }

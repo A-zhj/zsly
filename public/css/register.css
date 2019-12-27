@@ -14,7 +14,7 @@ button{
 }
 .reg{
   width: 600px;
-  height: 400px;
+  height: 420px;
   border: 1px solid #ccc;
   margin: 160px auto;
   background: rgba(255,255,255,0.5);
@@ -59,7 +59,7 @@ p>button{
   box-shadow: none ;
   outline-style: none;
 }
-.reg>.captcha>input{
+.reg>.captcha input{
   width: 89px;
   margin-right: 10px;
 }
