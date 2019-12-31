@@ -155,7 +155,7 @@
             showMessage(result.msg,"success",2000)
             setTimeout(() => {
               //跳转登录界面
-              window.location.href="http://127.0.0.1:5504/zsly/public/index.html"
+              window.location.href="http://127.0.0.1:5504/public/index.html" 
             }, 3000);
           }else{
             showMessage(result.msg,"error",2000)
